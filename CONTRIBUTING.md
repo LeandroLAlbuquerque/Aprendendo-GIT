@@ -61,6 +61,15 @@ code teste.txt
 
 >Abrirá o arquivo dentro do Vscode, e não no seu editor de texto
 
+### Abrir a pasta do repositório Git direto no explorador
+
+```bash
+explore .
+```
+
+>Certifique que esteja no diretorio certo caso contrário abra pelo caminho  
+> Ex.: explore /c/Users/SeuUsuario/Documentos
+
 ---
 
 ## Comandos GIT
