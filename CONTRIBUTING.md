@@ -180,6 +180,41 @@ git log --stat
 
 > Adiciona todos os arquivos modificados ou novos à área de preparação (stage)
 
+### Você pode especificar o próprio formato dos registros
+
+```bash
+git log --pretty=format:"%h - %an, %ar : %s"
+```
+
+> Aqui existe alguns detalhes a mais onde você deve ficar atento para facilitar sua vida:
+
+| Valor da entrada | Valor da saída            |
+| :--------------: | :-----------------------: |
+| %h               | Hash do commit abreviado  |
+| %an              | nome do autor             |
+| %h               | Hash do commit abreviado  |
+| %ae              | Email do autor            |
+| %s               | Ver os comentários        |
+| %cd              | data do commiter          |
+
+>Existem mais opções, porém fica a sua curiosidade procurar, mas como estou aqui para ajudar
+>[Aqui você pode verificar os restos dos valores](https://git-scm.com/book/pt-br/v2/Fundamentos-de-Git-Vendo-o-hist%c3%b3rico-de-Commits#rpretty_format)
+
+### Errou o nome do commit, você consegue modificar a partir do --amend
+
+```bash
+git commit -m "Fist commit"
+git commit --amend -m "First commit"
+```
+<!-- Lembre-se de colocar essa tabela por último-->
+### Envie para o git hub
+
+```bash
+git push -u origin main
+```
+
+> Adiciona todos os arquivos modificados ou novos à área de preparação (stage)
+
 ---
 
 > #### Oberservação
